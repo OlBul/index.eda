@@ -1,0 +1,249 @@
+@import '../scss/normalize.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular,italic,500,500italic,700,700italic,&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto;
+}
+
+.container {
+    max-width: 1194px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.search-form {
+    margin: 0 0 0 76px;
+    background: rgba(238, 238, 238, 0.71);
+    border-radius: 10px;
+    display: flex;
+    max-width: 620px;
+    flex-grow: 1;
+    position: relative;
+}
+.auth {
+    margin: 0 0 0 auto;
+}
+
+.search-input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 13px 20px;
+}
+
+.search-button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 0 18px;
+    cursor: pointer;
+}
+
+.login {
+    background: #EBEBEB;
+    border-radius: 50px;
+    padding: 16px 30px;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.shoping-cart {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background-color: #F66A15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 30px;
+    position: relative;
+}
+
+.shoping-counter {
+    font-size: 8px;
+    line-height: 9px;
+    color: #000000;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 50%;
+    background: #FFAF19;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+// ========================= Slider =========================
+
+.slide {
+    position: relative;
+    border-radius: 20px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    overflow: hidden;
+}
+
+.slide__content {
+    max-width: 400px;
+    position: relative;
+}
+
+.slide__title {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 51px;
+    margin: 0 0 15px 0;
+}
+
+.slide__text {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 30px 0;
+}
+
+.slide__text-light {
+    background-color: grey;
+    color: #ffffff;
+}
+
+.slide__summer {
+    background: url('../img/summer.png');//0 0/cover no-repead;
+   // background:  linear gradient(90deg,rgba(0, 0, 0, 0.43) 40.45%, 
+   // rgba(0, 0, 0, 0) 100%), url('../img/summer.png');
+}
+ .slide::before{
+     content:'';
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     background: linear-gradient(90deg,rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%);     
+ }
+
+.button__primery {
+    background: #F47322;
+    color: #ffffff;
+}
+
+.button {
+    border-radius: 25px;
+    padding: 11px 50px;
+    text-decoration: none;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+// ====================== Promo ==================
+
+.promo {
+    padding: 50px 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {    
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 32px;
+    max-width: 570px;
+    min-height: 380px;
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &::before {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    }
+}
+
+.card__text-lingh {
+    color: #ffffff;
+}
+
+.card__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    margin: 4px 0 21px 0;
+    text-align: left;
+}
+
+.card__description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    max-width: 200px;
+}
+
+.card__price {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    display: block;
+    margin: 0 0 8px 0;
+}
+
+.card__delivery {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    display: block;
+    margin: 0 0 25px 0;
+}
+
+.button__default {
+    background-color: #ffffff;
+    color: #5F5F61;
+    weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+/*.sweet-basket {
+    background: url('../img/sweet-basket.png')center/cover no-repeat;
+}*/
+
+.card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    object-fit: cover;
+}
