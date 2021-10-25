@@ -161,14 +161,14 @@ body{
 
 .promo {
     padding: 50px 0;
-}
-
-.cards {
     display: flex;
     justify-content: space-between;
+    margin: -20px;
 }
 
-.card {    
+.card {
+    margin: 20px;    
+    flex: 50%;
     position: relative;
     border-radius: 20px;
     overflow: hidden;
@@ -247,3 +247,276 @@ body{
     z-index: -2;
     object-fit: cover;
 }
+
+// ======================== delivery__week ========================
+
+.section__title {
+    font-size: 32px;
+    line-height: 23px ;   
+    color: #000000;
+    font-weight: 500;
+    margin: 0 0 47px 0;
+}
+
+.delivery__week {
+    padding: 100px 0;
+}
+
+.delivery__cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.delivery__card {
+    margin: 15px;
+    position: relative;
+    width: 275px;
+    height: 182px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.delivery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.delivery__tag {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #49494F;   
+    padding: 5px 10px;
+}
+
+.tag__health {
+    background: #D0FD89;
+}
+
+.tag__vegetables {
+    background: #AEBC41;
+}
+
+.tag__meat {
+    background: #B86B78;
+}
+
+.tag__bird {
+    background: #D68334;
+}
+
+.tag__fish {
+    background: #CD6255;
+}
+
+.tag__baby {
+    background: #FFFDBF;
+}
+
+.tag__parents {
+    background: #F6FDC8;
+}
+
+.tag__holiday {
+    background: #FEF7FE;
+}
+
+.category {
+    padding: 40px 0 60px 0;
+}
+
+//======================== tabs__card =====================
+
+.category {
+    background: #F6F6F6;
+}
+
+.tabs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin: 0 0 62px 0;
+   
+}
+
+.tabs__link {
+    font-size: 20px;
+    line-height: 23px;
+    color: #49494F;
+    text-decoration: none;
+    margin: 0 58px 0 0;
+    &.active {
+        color: #F37321;
+    }
+}
+
+.tabs__card {
+    max-width: 270px;
+    border-radius: 20px;
+    overflow: hidden ;
+    background-color: #ffffff;
+}
+
+.tabs__image {
+   max-width: 100%;
+  
+}
+
+.tabs__columns {
+    display: flex;
+    margin: -16px;
+    justify-content: space-between;
+    margin: 0 0 60px 0;
+}
+
+.tabs__contant {
+    margin: 16px;
+}
+
+.tabs__card-contant {
+    padding: 23px;
+}
+
+.tabs__title {
+    padding: 0 0 13px 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.tabs__description {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #B9B9BE;
+}
+
+.tabs__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tabs__price {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 23px;
+    color: #4B4B51;
+    display: block;
+    margin: 0 0 5px 0;
+}
+
+.tabs__weight {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #AAAAB1;
+}
+
+.button__outline {
+    padding: 15px 25px;
+    border: 2px solid #F37321;    
+    border-radius: 33px;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F37321;
+}
+
+.button-centre {
+    display: block;
+    margin: auto;
+    width: 315px;
+    cursor: pointer;
+}
+
+// ============================ benefits ==========================
+
+.benefits__title {
+    margin: 0 0 52px 0;
+}
+
+.benefits__columns {
+    display: flex;
+    justify-content: space-between;
+    margin: -16px;
+}
+
+.benefits__item {
+    padding: 30px 24px 25px 24px;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    max-width: 270px;
+
+    .benefits__item-img {
+        max-width: 100%;
+        margin: 0 0 34px;
+    }
+    
+    .benefits__item-title {
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        text-align: center;
+        margin: 0 0 13px;
+        min-width: 159px;
+    }
+
+    .benefits__item-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #49494F;
+    }
+}
+
+// ====================== footer ===================
+
+.footer {
+    padding: 40px 0;
+    background: #F6F6F6;
+
+    .footer__wrapper {
+        display: flex;
+        align-items: center;
+        .footer__logo {
+            max-width: 205px;
+            margin: 0 50px 0 0;
+        }
+        .footer__link {           
+            font-size: 16px;
+            line-height: 23px;
+            text-decoration-line: underline;
+            color: #000000;
+            margin: 0 50px 0 0;
+        }
+        .social__links {
+            display: flex;
+            align-items: center;
+            margin: 0 0 0 auto;
+            .social__link {
+                margin: 0 0 0 20px;
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
